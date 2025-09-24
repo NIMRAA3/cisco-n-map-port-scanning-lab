@@ -93,5 +93,12 @@ This lab showed how **Nmap** is used to detect open ports, analyze running servi
 
  
 
-Do you want me to also include the **Port → Service → Vulnerability → Mitigation** table in this README template so everything is in one place?
-```
+| Port            | Service       | Purpose                        | Risks / Vulnerabilities                                        | Mitigation                                                              |
+| --------------- | ------------- | ------------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **21/tcp**      | FTP           | File transfers                 | Anonymous login, cleartext credentials, brute-force attacks    | Disable anonymous FTP, use SFTP/FTPS, or uninstall FTP server           |
+| **22/tcp**      | SSH           | Secure remote login            | Brute-force attacks, weak keys, misconfiguration               | Use key-based auth, disable root login, update OpenSSH, enable fail2ban |
+| **23/tcp**      | Telnet        | Remote CLI (unencrypted)       | Cleartext credentials, eavesdropping, replay attacks           | Remove Telnet, replace with SSH                                         |
+| **631/tcp/udp** | IPP (CUPS)    | Network printing               | Remote code execution (CVE-2024-47176 etc.), DoS, info leakage | Patch CUPS, restrict to localhost, disable if unused                    |
+| **123/udp**     | NTP           | Time synchronization           | Amplification DDoS, DoS, exploitation of outdated ntpd         | Block public access, patch NTP, disable monlist/mode7                   |
+| **5353/udp**    | mDNS/Zeroconf | Local device/service discovery | DoS, spoofing, cache poisoning, info disclosure                | Patch Avahi/Bonjour, restrict to LAN, disable if unused                 |
+[click here to downolad file  ](
