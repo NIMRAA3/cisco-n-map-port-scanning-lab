@@ -103,4 +103,4 @@ This lab showed how **Nmap** is used to detect open ports, analyze running servi
 | **5353/udp**    | mDNS/Zeroconf | Local device/service discovery | DoS, spoofing, cache poisoning, info disclosure                | Patch Avahi/Bonjour, restrict to LAN, disable if unused                 |
 
 
-[click here to downolad file  ](
+[click here to downolad file  ](https://github.com/NIMRAA3/cisco-n-map-port-scanning-lab/blob/main/scan%20ports%20lab%20%20cisco.docx)
