@@ -101,4 +101,6 @@ This lab showed how **Nmap** is used to detect open ports, analyze running servi
 | **631/tcp/udp** | IPP (CUPS)    | Network printing               | Remote code execution (CVE-2024-47176 etc.), DoS, info leakage | Patch CUPS, restrict to localhost, disable if unused                    |
 | **123/udp**     | NTP           | Time synchronization           | Amplification DDoS, DoS, exploitation of outdated ntpd         | Block public access, patch NTP, disable monlist/mode7                   |
 | **5353/udp**    | mDNS/Zeroconf | Local device/service discovery | DoS, spoofing, cache poisoning, info disclosure                | Patch Avahi/Bonjour, restrict to LAN, disable if unused                 |
+
+
 [click here to downolad file  ](
